@@ -50,9 +50,9 @@ BoxJs订阅地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa
 *************************
 
 [Script]
-京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/ali3707/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/ali3707/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 [MITM]
 hostname = api.m.jd.com
@@ -62,9 +62,9 @@ hostname = api.m.jd.com
 *************************
 
 [Script]
-cron "5 0 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+cron "5 0 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/ali3707/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean tag=获取京东Cookie, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean tag=获取京东Cookie, script-path=https://raw.githubusercontent.com/ali3707/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 [MITM]
 hostname = api.m.jd.com
